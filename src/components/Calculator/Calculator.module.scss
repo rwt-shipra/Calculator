@@ -28,7 +28,7 @@
   top:10vh;
   padding: 12px;
   margin: 0;
-  position: relative;
+  position: fixed;
   background-color:black;
   color:#ffff;
   border-radius: 10px;
@@ -115,6 +115,7 @@
     border:none;
     font-weight: 400;
     font-size: 30px;
+    position: fixed;
     button{
       margin: 8px;
     }
@@ -122,6 +123,7 @@
   .display{
     font-weight: 400;
     font-size: 35px;
+
   }
 
 }
