@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "Digital";
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot");
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7")
+      format("svg");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  &:focus{
+    outline: none;
+  }
+}
+.wrapper {
+  font-family: digital;
+  height: auto;
+  min-width: 305px;
+  width: 315px;
+  top:10vh;
+  padding: 12px;
+  margin: 0;
+  position: relative;
+  background-color:black;
+  color:#ffff;
+  border-radius: 10px;
+  border:2px solid #A5A5A5;
+  
+  &:focus{
+    outline: none !important;
+    outline-style: none !important;
+  } 
+  }
+  .buttonDivs {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    outline: none;
+    top:25px;
+    outline: none;
+    min-width: 305px;
+    z-index: 3;
+    width: 305px;
+
+    &:focus{
+      outline: none !important;
+      outline-style: none !important;
+    }
+    
+    button {
+      border-radius: 100px;
+      border:none;
+      width: 60px;
+      height: 60px;
+      font-weight: 400;
+      font-size: 35px;
+      margin: 8px;
+      color: #fff;
+      padding: 0;
+      background-color: #333333;
+      z-index: 10;
+      outline: none;
+      &:focus{
+        outline: none !important;
+        outline-style: none !important;
+      }
+      &.operatorStyle
+        {
+          background-color:  #F69007;
+       }
+       &.zeroButton{
+        width: 135px;
+       }
+       &.clearStyle{
+        width: 135px;
+        padding: 0;
+        background-color: #A5A5A5;
+        color: #000;
+        font-size: 28px;
+        font-weight: 500;
+       }
+       &.modeStyle{
+        background-color: #A5A5A5;
+        color: #000;
+       }
+    }
+}
+.display {
+  text-align: right;
+  font-weight: 500;
+  font-size: 48px;
+  outline: none;
+  min-width: 280px;
+  width: 280px;
+  margin: 10px auto;
+  padding: 8px;
+  overflow: hidden;
+  height: 50px;
+  letter-spacing: 0.15em;
+  background: #000;
+  border: none;
+  color: #fff;
+  }
+
+@media (max-width: 420px){
+  .wrapper {
+    border:none;
+    font-weight: 400;
+    font-size: 30px;
+    button{
+      margin: 8px;
+    }
+  }
+  .display{
+    font-weight: 400;
+    font-size: 35px;
+  }
+
+}
