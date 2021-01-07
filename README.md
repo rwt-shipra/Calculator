@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 # React Calculator
-![Calculator](https://github.com/rwt-shipra/Calculator/blob/main/public/screenShot.png?raw=true&amp;size=50)
+<img src="https://github.com/rwt-shipra/Calculator/blob/main/public/screenShot.png?raw=true&amp" width="420"/> 
 
 
 ## Available Scripts
