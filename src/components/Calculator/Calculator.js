@@ -162,9 +162,9 @@ class Calculator extends React.Component {
             <button
               className={calCss.clearStyle}
               onClick={() =>
-                displayNumber.length !== 0 && this.clearButtonHandler()
+                displayNumber.length !== 0 && this.clearLastValueHandler()
               }
-              id="clear"
+              id="clearLastValue"
             >
               C
             </button>
