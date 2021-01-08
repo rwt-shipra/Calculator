@@ -42,7 +42,7 @@ class Calculator extends React.Component {
   }
 
   BackSpaceEventHandler=(e)=>{
-      if(e.key === "Backspace"){this.clearButtonHandler();}
+      if(e.key === "Backspace"){this.clearLastValueHandler();}
   }
 
   componentDidMount(){
@@ -58,7 +58,7 @@ class Calculator extends React.Component {
     let displaylength = displayNumber.length - 1;
     let tempDisplay = displaylength >= 0 && displayNumber[displaylength];
     let number = e.target ===undefined ?e : e.target.value;
-    if (tempDisplay.length < 18 || tempDisplay.length === undefined) {
+    if (tempDisplay.length < 9 || tempDisplay.length === undefined) {
       displayNumber.length === 0 || REGEX.test(displayNumber[displaylength])
         ? displayNumber.push(number)
         : (displayNumber[displaylength] =
@@ -83,8 +83,14 @@ class Calculator extends React.Component {
   };
 
   clearButtonHandler = () => {
+    
     this.setState({ displayNumber: [], calCulatedValue: 0 });
   };
+  clearLastValueHandler=()=>{
+    let displayNumber = [...this.state.displayNumber];
+    displayNumber = displayNumber.slice(0,-1);
+    this.setState({ displayNumber:displayNumber});
+  }
   operationsClickHandler = (number) => {
     let { calCulatedValue } = this.state;
     let displayNumber = [...this.state.displayNumber];
@@ -152,6 +158,15 @@ class Calculator extends React.Component {
               id="clear"
             >
               AC
+            </button>
+            <button
+              className={calCss.clearStyle}
+              onClick={() =>
+                displayNumber.length !== 0 && this.clearButtonHandler()
+              }
+              id="clear"
+            >
+              C
             </button>
             <button
               className={calCss.modeStyle}

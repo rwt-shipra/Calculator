@@ -80,7 +80,6 @@
         width: 135px;
        }
        &.clearStyle{
-        width: 135px;
         padding: 0;
         background-color: #A5A5A5;
         color: #000;
@@ -96,7 +95,7 @@
 .display {
   text-align: right;
   font-weight: 500;
-  font-size: 48px;
+  font-size: 42px;
   outline: none;
   min-width: 280px;
   width: 280px;
@@ -108,14 +107,18 @@
   background: #000;
   border: none;
   color: #fff;
+  overflow: hidden;
   }
 
 @media (max-width: 420px){
+  
   .wrapper {
     border:none;
     font-weight: 400;
     font-size: 30px;
     position: fixed;
+    overflow: hidden;
+    top:0;
     button{
       margin: 8px;
     }
@@ -123,7 +126,7 @@
   .display{
     font-weight: 400;
     font-size: 35px;
-
+    margin:0 auto;
   }
 
 }
