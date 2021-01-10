@@ -5,6 +5,5 @@ node_js:
 -"v14.15.0"
 
 scripts:
-        _npm-install_g_jest
         -npm-test
         -npm-run-build
