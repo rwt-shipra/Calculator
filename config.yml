@@ -1,7 +1,9 @@
-version: 2.1
-orbs:
-  node: circleci/node@3.0.0
-workflows:
-  node-tests:
-    jobs:
-      - node/test
+
+language: node_js
+
+node_js:
+-"v14.15.0"
+
+scripts:
+        -npm-test
+        -npm-run-build
