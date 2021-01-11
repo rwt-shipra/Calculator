@@ -180,7 +180,7 @@ class Calculator extends React.Component {
             <button
               className={calCss.operatorStyle}
               onClick={() =>
-                displayNumber.length !== 0 && this.operationsClickHandler("/")
+                displayNumber.length !== 0 && this.operationsClickHandler("-")
               }
               id="divide"
               data-testid="divide"

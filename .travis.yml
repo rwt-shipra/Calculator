@@ -3,6 +3,11 @@ language: node_js
 node_js:
 -"v14.15.0"
 
+on:
+  push:
+    branches: [ circle-project-setup ]
+
 scripts:
-        -npm-test
         -npm-run-build
+        -npm-test
+        
