@@ -3,11 +3,10 @@ language: node_js
 node_js:
 -"v14.15.0"
 
-on:
-  push:
-    branches: [ circle-project-setup ]
+"hooks": {
+    "pre-commit": "npm run test",
+    "pre-push": "npm run test"
+  }
 
-scripts:
-        -npm-run-build
-        -npm-test
+
         
