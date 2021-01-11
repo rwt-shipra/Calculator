@@ -1,12 +1,11 @@
 language: node_js
 
-node_js:
--"v14.15.0"
-
-"hooks": {
-    "pre-commit": "npm run test",
-    "pre-push": "npm run test"
-  }
+cache:
+  directories:
+    - node_modules
+script:
+  - npm run build
+  - npm test
 
 
         
