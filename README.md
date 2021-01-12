@@ -1,6 +1,6 @@
 # Getting Started with Create React App
-
-!https://travis-ci.com/rwt-shipra/Calculator.svg?branch=main!:https://travis-ci.com/rwt-shipra/Calculator# React Calculator
+!https://travis-ci.com/rwt-shipra/Calculator.svg?branch=main!:https://travis-ci.com/rwt-shipra/Calculator
+# React Calculator
 <img src="https://github.com/rwt-shipra/Calculator/blob/main/public/screenShot.png?raw=true&amp" width="420"/> 
 
 
